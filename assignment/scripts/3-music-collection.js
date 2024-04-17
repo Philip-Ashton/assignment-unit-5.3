@@ -3,8 +3,9 @@ console.log('***** Music Collection *****')
 
 let myCollection = [];
 
+function addToCollection(collection, title, artist, yearPublished) {
 
-
+}
 
 
 
