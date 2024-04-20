@@ -3,10 +3,12 @@ console.log('***** Music Collection *****')
 
 let myCollection = [];
 
-function addToCollection(collection, title, artist, yearPublished) {
+function addToCollection(title, artist, yearPublished) {
+  return title, + artist, + yearPublished;
 
 }
 
+console.log(myCollection);
 
 
 
