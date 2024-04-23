@@ -25,6 +25,17 @@ addToCollection(myCollection, 'Check Your Head', 'Beastie Boys', '1992');
 addToCollection(myCollection, '#1 Record', 'Big Star', '1972');
 addToCollection(myCollection, 'The Story', 'Brandi Carlile', '2007');
 
+console.log(myCollection);
+
+
+function showCollection(myCollection) {
+  
+}
+
+function findByArtist(myCollection) {
+  for (let artist of myCollection)
+}
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
