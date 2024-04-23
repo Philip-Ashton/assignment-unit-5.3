@@ -29,11 +29,15 @@ console.log(myCollection);
 
 
 function showCollection(myCollection) {
-  
+  for (let record of myCollection) {
+    console.log(record);
+  }
 }
 
-function findByArtist(myCollection) {
-  for (let artist of myCollection)
+function findByArtist (myCollection) {
+  for (let artist in myCollection) {
+    console.log(artist);
+  }
 }
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
