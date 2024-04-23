@@ -3,14 +3,27 @@ console.log('***** Music Collection *****')
 
 let myCollection = [];
 
-function addToCollection(title, artist, yearPublished) {
-  return title, + artist, + yearPublished;
+function addToCollection(collection, title, artist, yearPublished) {
+  // your code here...
+  let record = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
 
-}
+  }
+ collection.push(record)
+    return record;;
+  }
+  
 
 console.log(myCollection);
 
-
+addToCollection(myCollection, 'Still Crazy After All These Years', 'Paul Simon', '1975' );
+addToCollection(myCollection, 'Sky Blue Sky', 'Wilco', '2007');
+addToCollection(myCollection, 'Arthur (Or the Decline...', 'The Kinks', '1969');
+addToCollection(myCollection, 'Check Your Head', 'Beastie Boys', '1992');
+addToCollection(myCollection, '#1 Record', 'Big Star', '1972');
+addToCollection(myCollection, 'The Story', 'Brandi Carlile', '2007');
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
