@@ -11,14 +11,14 @@ function addToCollection(collection, title, artist, yearPublished) {
     yearPublished: yearPublished
 
   }
- collection.push(record)
-    return record;;
-  }
-  
+  collection.push(record)
+  return record;;
+}
+
 
 console.log(myCollection);
 
-addToCollection(myCollection, 'Still Crazy After All These Years', 'Paul Simon', '1975' );
+addToCollection(myCollection, 'Still Crazy After All These Years', 'Paul Simon', '1975');
 addToCollection(myCollection, 'Sky Blue Sky', 'Wilco', '2007');
 addToCollection(myCollection, 'Arthur (Or the Decline...', 'The Kinks', '1969');
 addToCollection(myCollection, 'Check Your Head', 'Beastie Boys', '1992');
@@ -30,15 +30,23 @@ console.log(myCollection);
 
 function showCollection(myCollection) {
   for (let record of myCollection) {
-    console.log(record);
+    console.log('Title: ' + record.title + 'Artist: ' + record.artist + 'Year Published: ' + record.yearPublished);
   }
+}
+console.log(showCollection(myCollection));
+
+function findByArtist(myCollection, artist) {
+  let matches = [];
+  for (let record of myCollection) {
+    if (artist === record.artist) {
+      matches.push(record);
+    } 
+  } 
+  return matches;
 }
 
-function findByArtist (myCollection) {
-  for (let artist in myCollection) {
-    console.log(artist);
-  }
-}
+console.log(findByArtist(myCollection, 'ABBA'));
+console.log(findByArtist(myCollection, 'Wilco')) 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
