@@ -4,14 +4,14 @@ console.log('***** Music Collection *****')
 let myCollection = [];
 
 function addToCollection(collection, title, artist, yearPublished) {
-  let  album = {
+  let  record = {
     title: title,
     artist: artist,
     yearPublished: yearPublished
 
   }
-  collection.push(album);
-  return album;
+  collection.push(record);
+  return record;
 }
 
 console.log(myCollection);
@@ -24,6 +24,13 @@ addToCollection(myCollection, 'While My Guitar Gently Weeps', 'The Beatles', 196
 addToCollection(myCollection, 'Goldfinger', 'Shirly Bassey', 1965);
 
 console.log(myCollection);
+
+function showCollection(myCollection) {
+  for (let record of myCollection) {
+    console.log('Song title: ' + record.title + ' Artist: ' + record.artist + ' Year published: ' + record.yearPublished);
+  }
+}
+console.log(showCollection(myCollection));
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
