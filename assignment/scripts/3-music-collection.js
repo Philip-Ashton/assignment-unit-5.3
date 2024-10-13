@@ -45,6 +45,16 @@ console.log(findByArtist);
 console.log(findByArtist(myCollection, 'Shirly Bassey'));
 console.log(findByArtist(myCollection, 'David Bowie'));
 
+// function search(mycollection, artist, yearPublished) {
+//   let foundSong = [];
+//   for (let record of myCollection) {
+//     if (artist && yearPublished === record.artist && record.yearPublished){
+//       foundSong.push(record);
+//     }else return false;
+//   }return foundSong;
+ 
+// }
+
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
