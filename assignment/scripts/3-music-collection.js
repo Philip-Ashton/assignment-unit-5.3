@@ -32,6 +32,20 @@ function showCollection(myCollection) {
 }
 console.log(showCollection(myCollection));
 
+function findByArtist(myCollection, artist) {
+  let singer = [];
+  for (let record of myCollection) {
+    if (artist === record.artist) {
+      singer.push(record);
+    }
+  }
+  return singer;
+}
+console.log(findByArtist);
+console.log(findByArtist(myCollection, 'Shirly Bassey'));
+console.log(findByArtist(myCollection, 'David Bowie'));
+
+
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
