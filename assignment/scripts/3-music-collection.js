@@ -14,9 +14,16 @@ function addToCollection(collection, title, artist, yearPublished) {
   return album;
 }
 
+console.log(myCollection);
 
+addToCollection(myCollection, 'Lets Dance', 'David Bowie', 1983);
+addToCollection(myCollection, 'Money for Nothing', 'Dire Straits', 1985);
+addToCollection(myCollection, 'Youre So Vain', 'Carly Simon', 1972);
+addToCollection(myCollection, 'Beat It', 'Michael Jackson', 1982);
+addToCollection(myCollection, 'While My Guitar Gently Weeps', 'The Beatles', 1968);
+addToCollection(myCollection, 'Goldfinger', 'Shirly Bassey', 1965);
 
-
+console.log(myCollection);
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
